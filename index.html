@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>da</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style type="text/css">
+    	.pa {
+    		position: absolute;
+    	}
+    	.h400 {
+    		height: 400px;
+    	}
+    	.w200 {
+    		width: 200px;
+    	}
+    </style>
+  </head>
+  <body style="background-image: url(foto.jpg); background-size: cover;">
+  	<div>
+  		<div class="bg-warning h400 w200">
+  			<h3 class="pod" style="text-decoration: none;">1. clown</h3>
+  			<h3 class="pod2" style="text-decoration: none;">2. sus</h3>
+  			<h3 class="pod3" style="text-decoration: none;">3. amogus</h3>
+  			<h3 class="pod4" style="text-decoration: none;">4. green apple</h3>
+  			<h3 class="pod5" style="text-decoration: none;">5. bread</h3>
+  			<h3>Score:</h3>
+  			<h3 class="numb">0</h3>
+  		</div>
+  		<img src="clown.png" class="pa clown" style="height: 50px; left: 1000px; top: 820px;">
+  		<img src="bread.png" class="pa bread" style="height: 50px; left: 1650px; top: 500px;">
+  		<img src="sus.png" class="pa sus" style="height: 40px; left: 250px; top: 900px;">
+  		<img src="amogus.png" class="pa amogus" style="height: 50px; left: 1500px; top: 960px;">
+  		<img src="apple green.png" class="pa apple" style="height: 50px; left: 700px; top: 310px;">
+
+  		<script type="text/javascript">
+  			let number = 1;
+  			document.querySelector('.clown').onclick=function () {
+  				alert("хорошчел")
+  				document.querySelector('.clown').style.display="none";
+  				document.querySelector('.pod').style.textDecoration="line-through";
+  				document.querySelector('.numb').innerHTML=number;
+  				number = number + 1;
+  			}
+  			document.querySelector('.bread').onclick=function () {
+  				alert("хорошчел")
+  				document.querySelector('.bread').style.display="none";
+  				document.querySelector('.pod5').style.textDecoration="line-through";
+  				document.querySelector('.numb').innerHTML=number;
+  				number = number + 1;
+  			}
+  			document.querySelector('.sus').onclick=function () {
+  				alert("хорошчел")
+  				document.querySelector('.sus').style.display="none";
+  				document.querySelector('.pod2').style.textDecoration="line-through";
+  				document.querySelector('.numb').innerHTML=number;
+  				number = number + 1;
+  			}
+  			document.querySelector('.amogus').onclick=function () {
+  				alert("хорошчел")
+  				document.querySelector('.amogus').style.display="none";
+  				document.querySelector('.pod3').style.textDecoration="line-through";
+  				document.querySelector('.numb').innerHTML=number;
+  				number = number + 1;
+  			}
+  			document.querySelector('.apple').onclick=function () {
+  				alert("хорошчел")
+  				document.querySelector('.apple').style.display="none";
+  				document.querySelector('.pod4').style.textDecoration="line-through";
+  				document.querySelector('.numb').innerHTML=number;
+  				number = number + 1;
+  			}
+  		</script>
+
+
+
+
+  	</div>
+  </body>
+</html>
